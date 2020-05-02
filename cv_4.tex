@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{wrapfig}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Evgenii Safronov} % Your name
+\address{evgenii.safronov@iit.it} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary address (optional)
+% \address{+393885816175}
+% \address{Ph.D. student at Humanoid Sensing and Perception group, Italian Institute of Technology}
+% \address{Genova, Italy}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Master of Science, Space and Engineering Systems} \hfill {September 2017 - June 2019}
+\\ 
+Skolkovo Institute of Space and Technology (Skoltech), Moscow, Russia.
+\\
+GPA: 5.0/5
+\\
+{Thesis project: Development of Mission Execution System for Unmanned Aircraft Systems}
+\\
+{Supervisors: Dr. Ing. habil. Konstantin Kondak, DLR, Germany,\\} 
+{prof. Dzmitry Tsetserukou, Skoltech, Russia}
+
+{\bf Bachelor of Science, Applied Physics and Mathematics} \hfill {September 2013 - July 2017}
+\\ 
+Moscow Institute of Physics and Technology (MIPT), Dolgoprudnyy, Russia.
+\\
+GPA: 4.92/5
+\\
+Thesis project: Optimization of single and double superconducting qubit gates 
+\\
+Supervisors: Dr. Kirill Shulga, Gleb Fedorov, Russian Quantum Center
+
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+
+
+\begin{rSection}{Experience and Internships} \itemsep -3pt  
+{Istituto Italiana di Tecnologia, Genova} \hfill November 2019 - now \\
+{Sberbank Robotics Lab, internship, Moscow} \hfill July 2019 - October 2019 \\
+{Master thesis internship, DLR/Elektra Solar GmbH, Munich} \hfill November 2018 - April 2019 \\ 
+{Agrocompost LLC, Moscow} \hfill August 2018 - October 2018 \\
+{Junior Researcher, Russian Quantum Center, Moscow} \hfill November 2016 - June 2017 \\
+{Summer Internship, Helmholtz-Zentrum Berlin, Berlin} \hfill August 2016 - September 2016\\
+{Website development, dati.mipt.ru} \hfill October 2015 - June 2016 \\
+{Tutor in physics, math and programming, Moscow} \hfill September 2014 - May 2016 \\
+\end{rSection} 
+
+
+\begin{rSection}{Awards and Scholarships} \itemsep -3pt  
+{Best Research Thesis - the best in the track, top 5\% of University, Skoltech} \hfill June 2019 \\
+{Best Academic Excellence - top 10\% of University, Skoltech} \hfill June 2019 \\
+{Eurobot 2019 Finals, Vice champions} \hfill June 2019 \\
+{Skoltech's academic mobility grant} \hfill November 2018 - April 2019 \\  
+{Eurobot 2018 Finals, 5th place} \hfill May 2018 \\
+{Skoltech president stipend} \hfill November 2017 - June 2018 \\
+{Letter from MIPT president in recognition of public achievements} \hfill November 2017\\
+{International Olympiad in Theoretical Physics, Gold medal} \hfill 2017 \\
+{Best general physics exam performance} \hfill June 2016 \\
+{MIPT 'Abramovka' competitive stipend for excellent study} \hfill September 2014 - June 2016 \\
+{All-Russian School Olympiad: regional winner for astronomy, physics, math and programming.} \hfill 2011 - 2013 \\
+\end{rSection} 
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills and interests}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Research & Task planning under partial observability \\
+Languages & C++, C, Python, JavaScript, CoffeeScript, Matlab, PHP\\ 
+Other & Linux, ROS, OpenCV, SolidWorks\\  
+Interests & table tennis, snowboarding, cinematography
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\pagebreak
+
+\begin{rSection}{PROJECTS}
+
+\begin{rSubsection}{Automated Planning under Uncertainties for Autonomous Robots}{November 2019 - now}{Ph.D. study at Uni. Genova \& Istituto Italiana di Tecnologia}
+\item Task planning in partially observable, non deterministic environment
+\end{rSubsection}
+
+\begin{rSubsection}{Development of Mission Execution System for Unmanned Aircraft Systems}{November 2018 - May 2019}{Master Thesis Project}{} 
+\item IEEE IROS 2019 conference contributed paper, 1st author
+\item High altitude pseudo satellites project in collaboration with Elektra Solar GmbH
+\item Control architecture 
+\item Theoretical rework of behavior tree (BT) concept, novel variable-based approach for BT
+\item State synchronization for 3 redundant flight control computers
+\item C++ framework developed
+
+\end{rSubsection} 
+
+
+%------------------------------------------------
+
+\begin{rSubsection}{UAV relative to ground mobile robot localization}{2018, Summer}{Industrial Immersion Project in Warevision, Skoltech startup}{}
+\item IEEE VTC 2019 Spring conference contributed paper, 2nd author
+\item Localization system based on fusion of monocular camera and ultrasonic robot-to-UAV distance measurements.
+\item UAV had 2 concentric IR active markers - smaller for landing and take-off, bigger for high altitude flights.
+\item Choice of solution, Python/ROS framework development
+\end{rSubsection}
+
+
+%------------------------------------------------
+\begin{rSubsection}{Eurobot Open}{2018-2019}{Skoltech}{}
+\item Champions of Russia, Vice champions of Europe
+\item Leading mentor
+\end{rSubsection}
+
+\begin{rSubsection}{Eurobot Open}{2017-2018}{Skoltech}{}
+\item Team Captain, Software Development
+\item 1st place in Russia, 5th place in Europe (final stage).
+\item 2 mobile collaborative robots from the scratch
+\item Linux, Python/ROS, Odroid XU4, Behavior trees, IQP/Dynamic programming, LIDAR, Computer Vision
+\item \url{https://github.com/SkoltechRobotics/ros-eurobot-2018}
+\item video \url{https://youtu.be/9kTYelf_5CA?t=4115}
+\end{rSubsection}
+
+\begin{rSubsection}{Automated mission generation based on score rewards and tasks execution time
+}{2017}{Skoltech, Optimization Methods Course}{}
+\item Code \& presentation, Best Grade
+\item \url{https://github.com/safoex/OptimizationMethods/blob/master/Project/Project\_s.ipynb}
+\end{rSubsection}
+
+\begin{rSubsection}{"Magic wand"-like gesture recognition based on IMU sensor data }{2017}{Skoltech, Introduction to Data Science Course}{}
+\item 96\% cross validated score (accuracy). Code \& presentation, Best Grade
+\item \url{https://github.com/MisterMap/MagicWand/blob/master/Gesture\%20classification\%20Presentation.ipynb}
+\end{rSubsection}
+
+\begin{rSubsection}{Optimization of single and double superconducting qubit gates}{2016-2017}{MIPT, Russian Quantum Center, Bachelor Thesis Project}{}
+\item Theoretical investigation and simulation of single and double qubit systems
+\item Python framework development \url{https://github.com/safoex/qubitlab}
+\end{rSubsection}
+
+
+
+\end{rSection} 
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+\iffalse
+
+\begin{rSection}{POSITION OF RESPONSIBILITY}
+
+\begin{rSubsection}{Mechanical Draftsman and Q.C Inspector}{May 2010 - May 2012} {Geeta Machine Tools Pvt. Ltd. Jamnagar} {} 
+\item Prepare 2D AND 3D Drawing and planning of a different CNC machine details
+parts drawings and their assembly drawing.
+\item Do some quality control work for maintain the quality of machine in the Units.
+\item Prepare of foundation and electrical layout drawings.
+\end{rSubsection}
+
+
+%------------------------------------------------
+
+\begin{rSubsection}{Lab Technician}{june 2012 - Auguest 2012}{Senor Metal Pvt. Ltd. Jamnagar} {}
+ \item Do Some Mechanical Destructive Testing- Tensile Test, Impact Test,Hardness Test
+\end{rSubsection}
+ 
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Extra-Cirrucular Activities} \itemsep -1pt {}   
+\item STTP on "Life Long Research" in SVNIT,Surat \hfill February 2016
+\item Design War Cad, SRCOE, Rajkot, Secured 2rd rank in a state level competition\hfill January-2016
+\item  Design War Cad, B.H Gardi, Rajkot, Secured 2rd rank in a
+state level competition. \hfill January-2014 
+\item Participated in National Level Technical Symposium Festival Edge and Above, SVIT, Vasad. \hfill February-2013
+\item Participated in National Level Technical Symposium Festival Home Basix, SVIT, Vasad.
+ \hfill  February-2013 
+\item Participated in National Level Technical Symposium Rise of Machine, SVIT, Vasad,  \hfill March-2014 
+ 
+
+\end{rSection}
+\fi
+\end{document}
