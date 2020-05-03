@@ -16,7 +16,7 @@ jobs:
         run: |
           git config --local user.email "safoex@hotmail.com"
           git config --local user.name "GitHub Action"
-          git add out/cv_4.pdf
+          git add cv_4.pdf
           git commit -m "Add changes" 
       - name: Push changes
         uses: ad-m/github-push-action@master
