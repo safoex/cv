@@ -10,11 +10,8 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: cv_4.tex
-      
-      - uses: actions/checkout@master
-      - name: Create local changes
-        run: |
-          ...
+
+#       - uses: actions/checkout@master
       - name: Commit files
         run: |
           git config --local user.email "safoex@hotmail.com"
