@@ -10,3 +10,17 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: cv_4.tex
+      
+      - uses: actions/checkout@master
+      - name: Create local changes
+        run: |
+          ...
+      - name: Commit files
+        run: |
+          git config --local user.email "safoex@hotmail.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
