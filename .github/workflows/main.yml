@@ -18,7 +18,25 @@ jobs:
           git config --local user.name "GitHub Action"
           git add cv_4.pdf
           git commit -m "Add changes" 
+          
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Prepare for pushing to website
+        run: |
+          mkdir __to_push
+          cd __to_push
+          mkdir files
+          cp ../cv_4.pdf files/cv.pdf
+      - name: Push to website
+        uses: safoex/github-action-push-to-another-repository@master
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+            source-directory: '__to_push'
+            destination-github-username: 'safoex'
+            destination-repository-name: 'safoex.github.io'
+            git-user-email: safoex@hotmail.com
+            reset-or-modify: nonsense
